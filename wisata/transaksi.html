@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indonesian Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aptos&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <h1>Indonesian Tourism</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="budaya.html">Ragam Budaya</a></li>
+                    <li><a href="wisata.html">Wisata</a></li>
+                    <li><a href="hotel.html">Hotel</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="form">
+            <form id="transaksiForm">
+                <h2>Formulir Transaksi</h2>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="destination">Destinasi:</label>
+                <select id="destination" name="destination">
+                    <option value="bromo">Gunung Bromo</option>
+                    <option value="rinjani">Gunung Rinjani</option>
+                    <option value="ubud">Ubud</option>
+                    <option value="komodo">Taman Nasional Komodo</option>
+                </select><br><br>
+                
+                <label for="hotelname">Hotel:</label>
+                <select id="hotelname" name="hotelname">
+                    <option value="amanjiwo">Amanjiwo</option>
+                    <option value="mulia">The Mulia</option>
+                    <option value="mandapa">Mandapa, A Ritz-Carlton Reserve</option>
+                    <option value="lomboklodge">The Lombok Lodge</option>
+                </select><br><br>
+
+                <label for="price">Harga per Malam (USD):</label>
+                <input type="text" id="price" name="price" readonly><br><br>
+                
+                <label for="checkin">Tanggal Check-In:</label>
+                <input type="date" id="checkin" name="checkin" required><br><br>
+                
+                <label for="checkout">Tanggal Check-Out:</label>
+                <input type="date" id="checkout" name="checkout" required><br><br>
+
+                <label for="total">Total Biaya (USD):</label>
+                <input type="text" id="total" name="total" readonly><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
