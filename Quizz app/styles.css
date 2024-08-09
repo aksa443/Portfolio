@@ -1,0 +1,162 @@
+/* Reset and global styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Mengganti font ke Roboto untuk tampilan yang lebih modern */
+    background-color: #f0f2f5; /* Light gray background yang lebih lembut */
+    margin: 0;
+    color: #333; /* Dark gray text for better readability */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #009688; /* Teal for a refreshing look */
+    padding: 15px 25px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adding subtle shadow for depth */
+}
+
+.navbar h1 {
+    margin: 0;
+    color: white;
+    font-size: 26px; /* Sedikit lebih besar */
+    letter-spacing: 1px; /* Sedikit spasi untuk efek yang lebih elegan */
+}
+
+/* Start container */
+.start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #e0f7fa; /* Light teal background for a calming effect */
+}
+
+.start-container h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Sedikit lebih besar untuk menarik perhatian */
+    color: #00796b; /* Slightly darker teal for better contrast */
+}
+
+.hide {
+    display: none;
+}
+
+/* Quiz container */
+.quiz-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for more depth */
+    text-align: center;
+    max-width: 450px; /* Slightly wider for better spacing */
+    width: 100%;
+    margin: 20px auto;
+}
+
+#timer {
+    font-size: 20px; /* Slightly bigger */
+    margin-bottom: 20px;
+    color: #e53935; /* Red color for urgency */
+}
+
+/* Question styling */
+.quiz-question {
+    margin-bottom: 25px;
+    font-size: 22px; /* Larger font for questions */
+    color: #333; /* Dark gray for text */
+}
+
+/* Answer choices */
+#choices {
+    list-style: none;
+    padding: 0;
+}
+
+#choices li {
+    margin-bottom: 15px; /* More spacing for better readability */
+}
+
+/* Custom buttons */
+button {
+    background-color: #009688; /* Teal color */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px; /* Slightly bigger */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #00796b; /* Darker teal on hover */
+}
+
+/* Custom radio buttons */
+.custom-radio {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    color: #333; /* Dark gray for readability */
+}
+
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #f0f2f5; /* Light gray background */
+    border-radius: 50%;
+    border: 2px solid #009688; /* Teal border */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.custom-radio input:checked ~ .checkmark {
+    background-color: #009688; /* Teal color when selected */
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-radio .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Score container */
+#score-container {
+    background-color: #009688; /* Teal background for score */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px; /* Bigger font for score */
+}
+
+#score-container h2 {
+    color: white;
+    font-size: 24px; /* Bigger heading */
+    margin-bottom: 15px;
+}

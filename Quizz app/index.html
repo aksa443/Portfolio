@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Quiz App</h1>
+    </nav>
+    
+    <div id="start-screen" class="start-container">
+        <h2>Are you ready to start the quiz?</h2>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+    
+    <div class="quiz-container hide" id="quiz-container">
+        <div id="timer">Time left: 60s</div>
+        <div id="quiz">
+            <div class="quiz-question">
+                <h2 id="question">Question text</h2>
+                <ul id="choices">
+                    <li>
+                        <label class="custom-radio">
+                            <input type="radio" name="choice" class="answer" id="a">
+                            <span class="checkmark"></span>
+                            <span id="a_text">Answer A</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-radio">
+                            <input type="radio" name="choice" class="answer" id="b">
+                            <span class="checkmark"></span>
+                            <span id="b_text">Answer B</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label class="custom-radio">
+                            <input type="radio" name="choice" class="answer" id="c">
+                            <span class="checkmark"></span>
+                            <span id="c_text">Answer C</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+        <div id="score-container" class="hide">
+            <h2>Your Score: <span id="score"></span></h2>
+            <button id="reload">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
